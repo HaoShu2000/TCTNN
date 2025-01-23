@@ -12,7 +12,7 @@ C_dim=[dim(1),n,dim(2),dim(3)];
 missingrate=P_t/dim(1);
 missingway='t-Norandom';
 switch missingway 
-      case 't-Norandom'%%各个维度随机丢失
+      case 't-Norandom'
             Pomega=zeros(dim(1),dim(2),dim(3));
             Pomega(1:dim(1)-P_t,:,:)=ones(dim(1)-P_t,dim(2),dim(3));      
 end
